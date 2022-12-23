@@ -1,0 +1,141 @@
+/* #footerRight {
+    float: right;
+    margin-right: 300px;
+}
+
+#footerLeft {
+    float: left;
+    margin-left: 300px;
+} */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    width: 595px;
+    height: 350px;
+    border: 2px solid var(--primary-color);
+    margin: 50px;
+
+}
+
+#logoDown {
+    width: 190px;
+
+}
+
+/* #footerBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+}
+
+#footerRight {
+    align-self: flex-end;
+   
+}
+
+#footerLeft {
+    align-self: flex-start;
+    
+    
+}
+
+#footerMid {
+
+}
+
+#footerDown {
+    flex-basis: ;
+    
+} */
+
+#footerMenu {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'footerAbove footerAbove footerAbove'
+        'footerLeft footerMid footerRight'
+        'footerBottom footerBottom footerBottom';
+}
+
+#footerAbove {
+    grid-area: footerAbove;
+}
+
+#footerLeft {
+    grid-area: footerLeft;
+}
+
+#footerRight {
+    grid-area: footerRight;
+}
+
+#footerBottom {
+    grid-area: footerBottom;
+}
+
+#footerMid {
+    grid-area: footerMid;
+    display: grid;
+    grid-template-areas: 
+    'socialhead socialhead socialhead'
+    'linkedin instagram gmail'
+    'github codepen behance'
+    'facebook discord twitter';
+}
+
+#socialHead {
+    grid-area: socialhead;
+}
+
+#facebook {
+    display: inline;
+    grid-area: facebook;
+}
+
+#linkedin {
+    display: inline;
+    grid-area: linkedin;
+}
+
+#instagram {
+    display: inline;
+    grid-area: instagram;
+}
+
+#gmail {
+    display: inline;
+    grid-area: gmail;
+}
+
+#github {
+    display: inline;
+    grid-area: github;
+}
+
+#codepen {
+    display: inline;
+    grid-area: codepen;
+}
+
+#behance {
+    display: inline;
+    grid-area: behance;
+}
+
+#discord {
+    display: inline;
+    grid-area: discord;
+}
+
+#twitter {
+    display: inline;
+    grid-area: twitter;
+}

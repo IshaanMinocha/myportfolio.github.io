@@ -1,0 +1,78 @@
+* {
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --primary-color: #4bb923;
+    --secondary-color: #5a5a5a;
+    --bg-color: black;
+}
+
+*::selection {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+#palleteimg {
+    float: right;
+    width: 300px;
+    margin-right: 30px;
+}
+
+#palletetext {
+    margin-left: 50px;
+}
+
+#palletelist {
+    list-style:none;
+}
+
+
+.formText {
+    background-color:var(--secondary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.formSubmit {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size:16px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 20px;
+}
+
+.formSubmit:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+
+#formMainHeading {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+#formHeading {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+#formLine {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}

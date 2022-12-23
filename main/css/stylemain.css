@@ -1,0 +1,193 @@
+* {
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --primary-color: #4bb923;
+    --secondary-color: #5a5a5a;
+    --bg-color: black;
+}
+
+*::selection {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
+#logo {
+    height: 50px;
+    margin-left: 30px;
+    position: fixed;
+}
+
+#mainName {
+    transition-property: all;
+    transition-duration: 0.3s;
+    font-family: 'Zen Dots', cursive;
+    color: var(--primary-color);
+}
+
+#mainName:hover {
+    color: var(--secondary-color);
+    font-size: 35px;
+}
+
+.centred {
+    text-align: center;
+}
+
+nav {
+    text-align: right;
+}
+
+#navbar {
+    position: sticky;
+    top: 0px;
+}
+
+.navButton {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 7px;
+    width: 100px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.navButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* .navButton:root {
+    color: blanchedalmond;
+    background-color: black;
+} */
+
+a {
+    transition-property: color;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+#ishuImage {
+    height: 300px;
+    width: 300x;
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ishuImage:hover {
+    box-shadow: 1px 1px 5px 10px var(--primary-color);
+}
+
+#resumeButton {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    width: 135px;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    /* display: block; */
+    display: inline-block;
+    /* text-align: center; */
+}
+
+#resumeButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#profile {
+    font-size: 30px;
+    font-family: 'Zen Dots', cursive;
+}
+
+.text {
+    font-family: 'Zen Dots', cursive;
+}
+
+.text:hover {
+    color: var(--primary-color);
+
+}
+
+#intro {
+    margin: auto;
+    max-width: 47em;
+    text-align: center;
+    font-size: 25px;
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#navResumeButton {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: var(--secondary-color);
+    padding: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#navResumeButton:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.footerHeading {
+    font-size: 25px;
+}
+
+.heading {
+    font-family: 'Zen Dots', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.subheading {
+    font-family: 'Zen Dots', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}

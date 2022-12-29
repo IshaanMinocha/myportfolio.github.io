@@ -25,12 +25,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
     </style>
-    <script src="action.js"></script>
+    <script src="/main/js/action.js"></script>
 </head>
 
 <body>
 
     <header>
+
+        <img id="themeicon" src="/images/sun.png" alt="Light">
         <div>
             <a href="/main/index.html">
                 <img id="logo" src="/images/logo2.png" alt=" I M ">
@@ -40,12 +42,14 @@
         <br><br>
 
         <nav id="navbar">
+
             <a class="navButton" href="/main/index.html">HOME</a>
             <a class="navButton" href="/menu/about.html">ABOUT</a>
             <a class="navButton" href="/menu/portfolio.html">PORTFOLIO</a>
             <a class="navButton" href="/menu/blogpage.html">BLOGPAGE</a>
             <a class="navButton" href="/menu/contact.html">CONTACT</a>
             <a id="navResumeButton" href="https://resume.com">Résumé</a>
+
         </nav>
 
     </header>
@@ -305,6 +309,19 @@
 
 
     </footer>
+
+    <script>
+        var themeicon = document.getElementById("themeicon");
+        themeicon.onclick = function () {
+            document.body.classList.toggle("lighttheme");
+            if (document.body.classList.contains("lighttheme")) {
+                themeicon.src = "/images/moon.png";
+            }
+            else {
+                themeicon.src = "/images/sun.png";
+            }
+        }
+    </script>
 
 
 </body>

@@ -10,6 +10,12 @@
     --bg-color: black;
 }
 
+.lighttheme {
+    --primary-color: #4bb923;
+    --secondary-color: #313131;
+    --bg-color: #e8e4e4;
+}
+
 *::selection {
     background-color: var(--primary-color);
     color: var(--bg-color);
@@ -18,6 +24,16 @@
 body {
     background-color: var(--bg-color);
     color: var(--secondary-color);
+}
+
+#themeicon {
+    float: right;
+    cursor: pointer;
+    width: 50px;
+}
+
+#themeicon:hover {
+    opacity: 50%;
 }
 
 #logo {
@@ -190,4 +206,8 @@ a:hover {
     font-family: 'Zen Dots', cursive;
     font-size: 25px;
     font-weight: bold;
+}
+
+.icon:hover {
+    opacity:50%
 }

@@ -1,25 +1,3 @@
-* {
-    transition-property: all;
-    transition-duration: 0.5s;
-    font-family: 'Roboto Slab', serif;
-}
-
-:root {
-    --primary-color: #4bb923;
-    --secondary-color: #5a5a5a;
-    --bg-color: black;
-}
-
-*::selection {
-    background-color: var(--primary-color);
-    color: var(--bg-color);
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--secondary-color);
-}
-
 #palleteimg {
     float: right;
     width: 300px;
